@@ -1,0 +1,194 @@
+body{
+    background-image: url(images/img.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+/* nav section */
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-image: linear-gradient(to left, #d8d8fb, #4736b3, #5a5abf);
+    z-index: 2;
+    box-shadow: 0px 15px 30px 0px #33333394;
+}
+
+.navbar-brand{
+  letter-spacing: 0.2em;
+  margin-left: 1em;
+  opacity: 0.6;
+}
+
+.navbar-brand:hover{
+    opacity: 0.9;
+}
+
+.nav-link{
+    padding: 8px 26px !important;
+}
+
+
+/* landing page section  */
+.lp-sec{
+    margin-top: 5em;
+    display: flex;
+    justify-content: space-around;
+}
+.img{
+  border: 5px solid #4736b3;
+  border-radius: 1px 210px 1px 210px;
+}
+
+.texts{
+  margin-top: 2em;
+  max-width: 30%;
+  color: #ffff;
+  font-size: x-large;
+  line-height: 1.8;
+  z-index: 1;
+}
+
+/* .lp-circle{
+    background-color: #4736b3;
+    position: absolute;
+    left: 1em;
+    min-width: 300px;
+    min-height: 300px;
+    border: 1px;
+    border-radius: 50%; 
+    opacity: 0.6;
+} */
+
+@media screen and (max-width: 920px) {
+  
+    .lp-sec{
+        display: grid;
+    }
+
+    .texts, .img{
+        max-width: 60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    
+        .img{
+            width: 100%;
+            border: 1px;
+            border-radius: 1px 50px 1px 50px;
+          }
+}
+
+/* about section */
+.about-heading{
+    margin-top: 7em;
+    text-align: center;
+    color: #fff;
+    
+}
+
+.about-container{
+    margin-top: 5em;
+    color: #fff;
+    /* column-count: 2 550px;
+    column-gap: 2em; */
+    display: grid;
+    grid-gap: 5em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.about-box, .about-box1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #4736b3;
+    border-radius: 1px;
+    text-align: center;
+    min-width: 70%;
+ 
+}
+
+.about-box1{
+ background-color: #4736b3;
+}
+
+.about-texts{
+    font-size: medium;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.about-box:hover{
+    background-color: #4736b3;
+}
+
+/* download section */
+.download-container {
+    position: relative;
+    margin: 10em 0;
+    text-align: center;
+    --a: 3deg;
+    --c: #4736b3;
+    
+    
+    border-image: conic-gradient(var(--c) 0 0) fill 0//9999px;
+    clip-path:
+      polygon(
+        -9999px calc(tan(var(--a))*9999px),
+        9999px calc(tan(var(--a))*-9999px),
+        calc(100% + 9999px) calc(100% - tan(var(--a))*9999px),
+        calc(100% - 9999px) calc(100% + tan(var(--a))*9999px)
+      );
+}
+
+.download-box{
+    padding: 7em;
+    line-height: 1.6;
+}
+
+.btn{
+    
+    border: 5px solid #4736b3d6;
+    box-shadow: 0 10px 30px -2px rgb(2, 11, 108);
+    background-color: black;
+    color: rgba(255, 255, 255, 0.51);
+    margin: 2em 0.5em;
+    min-width: 20%;
+    padding: 14px 16px;
+}
+
+i{
+   margin-left: 0.5em;
+}
+
+
+/* circles and texts */
+.circles{
+    position: relative;
+}
+
+.circle{
+    background-color: #4736b3;
+    width: 600px;
+    height: 100px;
+    border: 1px;
+    border-radius: 50%;
+}
+
+.circle2{
+    position: absolute;
+    bottom: 8em;
+    right: 1em;
+}
+
+/* footer section */
+footer{
+    text-align: center;
+    font-size: larger;
+    background-image: linear-gradient(to left, #d8d8fb, #4736b3, #5a5abf);
+    padding: 3em;
+}
+
